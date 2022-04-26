@@ -25,8 +25,6 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-
         firebaseAuth = FirebaseAuth.getInstance();
 
         mapping();
@@ -58,7 +56,6 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             });
         }
-
         private void mapping () {
             edtUser_R = findViewById(R.id.edtName_R);
             edtPass_R = findViewById(R.id.edtPass_R);
